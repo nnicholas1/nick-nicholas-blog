@@ -1,61 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nick Nicholas Mortgage Blog</title>
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-    }
-    header {
-      background-color: #004080;
-      color: white;
-      padding: 30px 20px;
-      text-align: center;
-    }
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-    .buttons a {
-      display: inline-block;
-      padding: 10px 20px;
-      margin: 10px 5px;
-      background-color: #b97c56;
-      color: white;
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f9f9f9; }
+    header { background: #004080; color: #fff; padding: 60px 20px; text-align: center; }
+    header h1 { margin: 0 0 10px; font-size: 2.2rem; }
+    .container { max-width: 800px; margin: auto; padding: 20px; background: #fff; }
+    nav { text-align: center; margin-bottom: 20px; }
+    nav a {
+      margin: 0 10px;
+      color: #004080;
       text-decoration: none;
-      border-radius: 5px;
       font-weight: bold;
     }
-    .buttons a:hover {
-      background-color: #a06642;
+    nav a:hover { text-decoration: underline; }
+    .buttons { text-align: center; margin: 30px 0; }
+    .buttons a {
+      display: inline-block;
+      padding: 12px 24px;
+      margin: 0 10px;
+      background: #b97c56;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+      font-size: 1rem;
     }
-    img {
+    .buttons a:hover { background: #a06642; }
+    img.profile {
       display: block;
       margin: 20px auto;
-      max-width: 150px;
+      max-width: 160px;
       border-radius: 8px;
       border: 2px solid #ccc;
     }
+    footer { text-align: center; padding: 20px; color: #666; font-size: 0.9rem; }
   </style>
 </head>
 <body>
+  <header>
+    <h1>Welcome!</h1>
+    <h2>Real Mortgage Advice Backed by 40+ Years of Experience</h2>
+  </header>
 
-<header>
-  <h1>Welcome!</h1>
-  <h2>Real Mortgage Advice Backed by 40+ Years of Experience</h2>
-</header>
+  <div class="container">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="post1.html">Pre-Approval FAQs</a>
+      <a href="post2.html">Credit Score Tips</a>
+      <a href="contact.html">Contact</a>
+    </nav>
 
-<div class="container">
-  <img src="nick.jpg" alt="Nick Nicholas">
+    <img src="nick.jpg" alt="Nick Nicholas" class="profile" />
 
-  <div class="buttons">
-    <a href="post1.html">Read the Latest Blog</a>
-    <a href="https://www.nick-nicholas.net" target="_blank">Apply Now</a>
+    <div class="buttons">
+      <a href="post1.html">Read the Latest Blog</a>
+      <a href="contact.html">Apply Now</a>
+    </div>
+
+    <footer>
+      📧 <a href="mailto:nnicholas@smprate.com">nnicholas@smprate.com</a>   📞 678-614-4327
+    </footer>
   </div>
-</div>
-
 </body>
 </html>
