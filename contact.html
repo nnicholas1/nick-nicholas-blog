@@ -1,1 +1,37 @@
-<html><head><title>Contact</title></head><body><h2>Contact Nick</h2><p>Email: nnicholas@smprate.com<br>Phone: 678-614-4327</p><a href='index.html'>Back</a></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Nick Nicholas</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato&display=swap" rel="stylesheet">
+  <!-- Shared Styles -->
+  <style>
+    * { box-sizing: border-box; margin:0; padding:0; }
+    body { font-family: 'Lato', sans-serif; color: #333; background: #f9f9f9; line-height:1.6; }
+    .container { max-width:800px; margin:auto; padding:40px 20px; background:#fff; }
+    h2 { font-family: 'Playfair Display', serif; font-size:2rem; margin-bottom:.5em; color:#004080; }
+    form { display:flex; flex-direction:column; }
+    label { margin:10px 0; }
+    input, textarea { padding:10px; font-size:1rem; }
+    button { background:#004080; color:#fff; padding:12px; border:none; cursor:pointer; font-weight:bold; margin-top:20px; }
+    button:hover { background:#0066cc; }
+    a { color:#004080; text-decoration:none; }
+    a:hover { text-decoration:underline; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Contact Nick Nicholas</h2>
+    <form name="contact" method="POST" data-netlify="true">
+      <label>Your Name: <input type="text" name="name" required></label>
+      <label>Email: <input type="email" name="email" required></label>
+      <label>Message: <textarea name="message" rows="5" required></textarea></label>
+      <button type="submit">Send</button>
+    </form>
+    <p>Or reach me directly: 📧 nnicholas@smprate.com | 📞 678-614-4327</p>
+    <p><a href="index.html">← Back to Home</a></p>
+  </div>
+</body>
+</html>
